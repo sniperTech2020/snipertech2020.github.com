@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - Voice Recorder录音机</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #fff;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
+        }
+        .header .app-name {
+            color: #fff;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            padding: 50px;
+            margin-bottom: 30px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #667eea;
+            margin-top: 35px;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #764ba2;
+            margin-top: 25px;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        strong {
+            color: #333;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #eee;
+            margin: 30px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        th, td {
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: #f8f9ff;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', Consolas, monospace;
+            font-size: 0.9em;
+            color: #764ba2;
+        }
+        .contact-info {
+            background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+        .footer {
+            text-align: center;
+            color: #fff;
+            opacity: 0.9;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .card {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            table {
+                font-size: 0.85em;
+            }
+            th, td {
+                padding: 10px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>隐私政策</h1>
+            <p class="app-name">Voice Recorder录音机</p>
+        </div>
+        
+        <div class="card">
+            <p><strong>Voice Recorder录音机</strong>（以下简称"我们"）致力于保护您的隐私。本隐私政策说明了我们如何在您使用语音录音应用时收集、使用和保护您的信息。</p>
+            
+            <hr>
+
+            <h2>1. 我们收集的信息</h2>
+
+            <h3>1.1 音频录音</h3>
+            <ul>
+                <li>当您使用我们的应用录音时，录音文件会在您的设备上本地创建和存储。</li>
+                <li><strong>我们不会将您的音频录音上传、传输或分享到任何外部服务器。</strong></li>
+            </ul>
+
+            <h3>1.2 我们请求的权限</h3>
+            <p>我们的应用可能会请求以下权限：</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>权限</th>
+                        <th>用途</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>RECORD_AUDIO</code>（录音）</td>
+                        <td>用于使用设备麦克风捕捉音频</td>
+                    </tr>
+                    <tr>
+                        <td><code>POST_NOTIFICATIONS</code>（通知）</td>
+                        <td>用于在通知栏显示录音状态和控制按钮</td>
+                    </tr>
+                    <tr>
+                        <td><code>FOREGROUND_SERVICE_MICROPHONE</code></td>
+                        <td>用于在应用切换到后台时继续录音</td>
+                    </tr>
+                    <tr>
+                        <td><code>FOREGROUND_SERVICE_MEDIA_PROJECTION</code></td>
+                        <td>用于在录屏时录制设备内部音频</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>1.3 自动收集的信息</h3>
+            <ul>
+                <li><strong>仅本地存储</strong>：应用设置和录音元数据（文件名、时长等）存储在您的设备本地。</li>
+                <li><strong>崩溃日志</strong>：如果应用崩溃，可能会收集匿名崩溃报告以帮助我们改进应用的稳定性。这些报告不包含任何个人信息或音频内容。</li>
+            </ul>
+
+            <hr>
+
+            <h2>2. 我们如何使用您的信息</h2>
+
+            <h3>2.1 主要用途</h3>
+            <ul>
+                <li>您的音频录音仅用于您预期的目的——在您的设备上录制和播放声音。</li>
+                <li>录音文件存储在您设备的本地存储中，由您完全控制。</li>
+            </ul>
+
+            <h3>2.2 不与第三方分享</h3>
+            <ul>
+                <li><strong>我们不会出售、出租或与任何第三方分享您的音频录音。</strong></li>
+                <li>我们不会将您的录音用于广告或分析目的。</li>
+            </ul>
+
+            <hr>
+
+            <h2>3. 数据存储与安全</h2>
+
+            <h3>3.1 本地存储</h3>
+            <ul>
+                <li>所有音频文件和应用数据都存储在您设备的本地存储中。</li>
+                <li>您可以随时通过应用或设备文件管理器删除录音。</li>
+            </ul>
+
+            <h3>3.2 安全措施</h3>
+            <ul>
+                <li>我们实施了合理的安全措施来保护您设备上的数据。</li>
+                <li>但请注意，没有任何电子存储方法能保证100%的安全。我们无法保证绝对安全。</li>
+            </ul>
+
+            <hr>
+
+            <h2>4. 您的权利与选择</h2>
+
+            <h3>4.1 访问与控制</h3>
+            <ul>
+                <li>您对您的录音拥有完全的控制权。</li>
+                <li>您可以随时播放、重命名、分享或删除录音。</li>
+            </ul>
+
+            <h3>4.2 卸载应用</h3>
+            <ul>
+                <li>卸载应用将删除所有应用数据，包括存储在应用目录中的录音。</li>
+                <li>注意：保存在公共文件夹中的录音可能需要手动删除。</li>
+            </ul>
+
+            <h3>4.3 权限管理</h3>
+            <ul>
+                <li>您可以通过设备的<strong>设置 &gt; 应用 &gt; 录音机 &gt; 权限</strong>撤销授予应用的任何权限。</li>
+            </ul>
+
+            <hr>
+
+            <h2>5. 儿童隐私</h2>
+            <p>本应用不面向13岁以下的儿童。我们不会故意收集13岁以下儿童的个人信息。</p>
+
+            <hr>
+
+            <h2>6. 政策更新</h2>
+            <p>我们可能会不时更新本隐私政策。任何更改都会在本页面发布更新版本。我们鼓励您定期查阅本政策。</p>
+
+            <hr>
+
+            <h2>7. 联系我们</h2>
+            <p>如果您对本隐私政策有任何疑问或顾虑，请联系我们：</p>
+            <div class="contact-info">
+                <p><strong>电子邮件</strong>：concise.tech2018@gmail.com</p>
+                <p><strong>应用名称</strong>：Voice Recorder录音机</p>
+            </div>
+
+            <hr>
+
+            <p style="text-align: center; color: #888; font-size: 0.9em;"><em>最后更新日期：2026年5月</em></p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Voice Recorder录音机. 保留所有权利。</p>
+        </div>
+    </div>
+</body>
+</html>
